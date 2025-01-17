@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">JOSUE</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                <!--    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>    -->
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>JOSUE RAMOS</h1>
+            <h2>Analista ciberseguridad - junior</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/JosueeRamos/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <!--     <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-twitter" ></i></a>  -->
+            <a href="https://www.linkedin.com/in/josueramosramos/"  ><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B51908951892&text&type=phone_number&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <!--          <a href="https://www.facebook.com/" ><i class="fa-solid fa-rss"></i></a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy JOSUE RAMOS.</span> Un analista de datos en formación y junior en ciberseguridad, con conocimientos en herramientas y lenguajes como Python, SQL, R studio, Excel avanzado, y Power BI. Estoy buscando mi primera oportunidad laboral como junior, donde pueda aplicar mis habilidades tanto en análisis de datos como en seguridad informática, mientras sigo creciendo profesionalmente.
+
+                Soy apasionado por transformar datos en insights valiosos y me entusiasma la ciberseguridad, especialmente en integrar prácticas seguras en el manejo de información. Estoy siempre dispuesto a aprender cosas nuevas, asumir retos y aportar valor a los proyectos mediante soluciones innovadoras y seguras.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Hablar con:</h3>
+                    <ul>
+                        
+                        <li>
+                            <strong>Teléfono</strong>
+                            +51 908 951 892
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            josuealexanderramosramos@gmail.com
+                        </li>
+                        
+                       
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>TECNOLOGIA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-file-csv"></i>
+                            <span>EXCEL</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-brain"></i>
+                            <span>CIENCIA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <span>MOTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>CCS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            <a href="MiCV.pdf" target="_blank" download="MiCV.docx">
+            <button>
+                Visualizar CV <i class="fa-solid fa-download"></i>
+           
+                <span class="overlay"></span>
+            </button> 
+            </a>
+
+
+
+
+
+
+            
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL Server</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ecxel</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wireshark, Nmap, Kali Linux, Parrot OS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Analìtico</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>DATOS ACADÉMICOS</h4>
+                        <span class="casa">ZEGEL</span>
+                        <span class="fecha">2021 - 2025</span>
+                        <p>Cuento con habilidades en desarrollo web y aplicaciones móviles, gestión y diseño de bases de datos, análisis de datos e inteligencia de negocios. Tengo experiencia en metodologías ágiles y predictivas para la gestión de proyectos tecnológicos, así como conocimientos en seguridad informática, auditorías y sistemas integrados de gestión. Además, domino técnicas de modelamiento estadístico, ciencia de datos y arquitectura de sistemas de información para apoyar la toma de decisiones estratégicas. También poseo capacidades en la gestión de tecnologías de la información y en la creación de proyectos innovadores orientados al desarrollo empresarial.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+             
+                  
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Agente de ventas ENTEL CHILE – REMOTO</h4>
+                        <span class="casa">TEC4BIZ| PERÙ</span>
+                        <span class="fecha">ene,2024- abr,2024</span>
+                        <p>
+                           
+                            •	Como Agente de Ventas en ENTEL Chile (remoto), promovía y vendía productos de lineas Pospagos. Identificaba necesidades, ofrecía soluciones y cerraba ventas. También gestiono la atención postventa y mantengo relaciones comerciales para asegurar la satisfacción del cliente.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Auxiliar del centro de computo</h4>
+                        <span class="casa">ONPE | PIURA </span>
+                        <span class="fecha">nov,2022- dic,2022</span>
+                        <p>
+                            Como Auxiliar del Centro de Cómputo en ONPE, supervisaba a los operadores para asegurar el cumplimiento de sus tareas y brindaba soporte técnico. Colaboraba en el mantenimiento de equipos y gestionaba incidencias. Garantizaba el correcto funcionamiento durante los procesos electorales.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Operador del centro de computo</h4>
+                        <span class="casa">ONPE | PIURA</span>
+                        <span class="fecha">sep,2022- oct,2022</span>
+                        <p>
+                            Como Operador del Centro de Cómputo en ONPE, me encargo de monitorear y operar los sistemas informáticos durante las jornadas electorales. Realizo la gestión de equipos y servidores, asegurando que todos los procesos se ejecuten de manera correcta y sin interrupciones. Además, atiendo incidencias técnicas y garantizo la integridad de los datos durante las actividades electorales.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+     <!--        <section id="portfolio" class="portfolio"> 
+        <div clav class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                PIURA
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                CONTACTAME: +51 908 951 892
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: josuealexanderramosramos@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/JosueeRamos/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <!--     <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-twitter" ></i></a>  -->
+        <a href="https://www.linkedin.com/in/josueramosramos/" target="_blank" ><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=%2B51908951892&text&type=phone_number&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    <!--          <a href="https://www.facebook.com/" ><i class="fa-solid fa-rss"></i></a> -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
